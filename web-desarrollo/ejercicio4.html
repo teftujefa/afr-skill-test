@@ -2,22 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejercicio 3</title>
+  <title>Ejercicio 4</title>
 </head>
 <body>
   <p id="mensaje">Texto original</p>
   <button id="btn">Cambiar texto</button>
 
   <script>
-    // TODO: Obtén una referencia al botón con id "btn"
-    const boton = /* tu código aquí */;
-
-    // TODO: Obtén una referencia al párrafo con id "mensaje"
-    const parrafo = /* tu código aquí */;
-
-    // TODO: Agrega un event listener al botón que al hacer clic
-    // cambie el textContent del párrafo a "¡Hola, mundo!"
-    /* tu código aquí */
+    const boton = document.getElementById("btn");
+    const parrafo = document.getElementById("mensaje");
+    boton.addEventListener("click", function() {
+      parrafo.textContent = "¡Hola, mundo!";
+    });
   </script>
 </body>
 </html>
